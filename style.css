@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline-block;
+    text-align: center;
+    padding: 30px;
+
+    background-color: #5aa58c;
+    font-weight: 'Montserrat', sans-serif;
+    line-height: 100px;
+    letter-spacing: -2px;
+    font-size: 45px;
+    font-weight: bolder;
+    color: #ffc846;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menus {
+    width: 100%;
+}
