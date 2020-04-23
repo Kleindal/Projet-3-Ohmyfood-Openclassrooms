@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 header h1{
@@ -114,8 +115,8 @@ aside {
 }
 
 .btn_coming_soon:hover {
-    box-shadow: 0 0 1em rgba(150,150,150,1);
-    cursor: pointer;
+    color: #5aa58c;
+    background-color: #ffc846;
 }
 
 #coming_soon_animation {
@@ -137,7 +138,13 @@ footer {
     position: fixed;
     bottom: 0;
     justify-content: space-between;
-    line-height: 70px;
+    padding: 1em;
+    line-height: 2em;
+}
+
+a {
+    color: #ffc846;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
