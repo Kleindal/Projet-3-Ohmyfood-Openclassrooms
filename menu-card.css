@@ -14,28 +14,6 @@ header h1{
     margin-bottom: 1em;
 }
 
-#name-menu-card {
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.menu-card {
-}
-
-.menu-card {
-    display: flex;
-    flex-direction: column;
-    width: 1200px;
-    height: 1650px;
-    border: solid 1px blue;
-}
-
-.recipes-list {
-    display: flex;
-    flex-direction: row;
-}
-
-
 header, footer {
     display: block;
     width: 100%;
@@ -44,6 +22,71 @@ header, footer {
     background-color: #5aa58c;
 }
 
+#name-top {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    margin: 1em;
+}
+#name-menu-card {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 1200px;
+    height: 1650px;
+    border: solid 1px blue;
+}
+
+.menu-section-1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    border: solid 1px green;
+}
+
+.menu-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.name-part-1 {
+    width: 300px;
+    font-size: 50px;
+}
+.text-deviser {
+    width: 300px;
+    height: 20px;
+    background-color: red;
+}
+
+.recipes-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.recipe {
+    text-align: left;
+    margin-right: auto;
+}
+
+.price {
+    text-align: right;
+}
 footer {
     display: flex;
     flex-wrap: nowrap;
