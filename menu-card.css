@@ -19,6 +19,23 @@ header h1{
     font-size: 1.5em;
 }
 
+.menu-card {
+}
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 1650px;
+    border: solid 1px blue;
+}
+
+.recipes-list {
+    display: flex;
+    flex-direction: row;
+}
+
+
 header, footer {
     display: block;
     width: 100%;
