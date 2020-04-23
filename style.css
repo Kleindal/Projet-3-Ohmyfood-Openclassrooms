@@ -10,12 +10,12 @@ header h1{
     font-size: 2.5em;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 1em;
 }
 
 header, footer {
     display: block;
     width: 100%;
-    margin-bottom: 2em;
     font-family: "Montserrat", sans-serif;
     color: #ffc846;
     background-color: #5aa58c;
@@ -25,36 +25,73 @@ header, footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
+    justify-content: center;
+    margin-bottom: 2em;
+    transition: 0.5s
 }
 
-.menu-1, .menu-2, .menu-3, .menu-4 {
+
+.flyleaf {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
     width: 500px;
     height: 700px;
-    margin: 1em auto 0 auto;
-    border: solid 1px teal;
-}
-
-.menus {
-    margin: 1em !important;
+    margin: auto 1em auto 1em;
+    align-items: center;
+    text-align: center;
+    border: solid 1px rgba(150,150,150,0.5);
     cursor: pointer;
-    transition: 0.5s;
 }
 
-.menus.menu-1 img:hover {
-    box-shadow: 0 0 2em rgba(150,150,150,0.5);
-    z-index: 1;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.05);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1);   
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.05);
-    transition: all 200ms ease-in;
-    transform: scale(1.05)
+.menu-1 {
+    background-color: #fadcdc;
 }
 
+.menu-1:hover,
+.menu-4:hover {
+    animation: shake 200ms;
+    animation-iteration-count: 4;
+}
+
+.menu-2:hover,
+.menu-3:hover {
+    animation: slide 200ms;
+    animation-iteration-count: 4;
+}
+
+@keyframes slide {
+    from {
+      transform: translate(0);
+    }
+    30% {
+      transform: translateX(4px);
+    }
+    50% {
+      transform: translate(0);
+    }
+    70% {
+      transform: translateX(-4px);
+    }
+    to {
+      transform: translate(0);
+    }
+}
+
+@keyframes shake {
+    from {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(1deg);
+    }
+    75% {
+      transform: rotate(-1deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+}
 
 aside {
     display: flex;
