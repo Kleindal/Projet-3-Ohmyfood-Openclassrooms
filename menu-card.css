@@ -30,10 +30,16 @@ header, footer {
 }
 
 /* La note enchantée */
-#name-menu-card-1 {
+#name-menu-card,
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
     text-align: center;
     font-size: 1.5em;
-    background-color: #;
 }
 
 .menu-section-1 {
@@ -43,17 +49,12 @@ header, footer {
 }
 
 .name-part-1 {
-    width: 450px;
+    width: 100%;
     font-size: 50px;
 }
 
 .menu-card {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
+    margin: 3em;
     width: 1200px;
     height: 1650px;
     border: solid 1px blue;
@@ -101,7 +102,47 @@ footer {
     line-height: 2em;
 }
 
-a {
+.hover-shake:hover {
+    animation: shake 150ms;
+    animation-iteration-count: 2;
+}
+
+@keyframes shake {
+    from {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(2deg);
+    }
+    75% {
+      transform: rotate(-2deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+}
+
+.btn_footer {
     color: #ffc846;
-    text-decoration: none;
+    border-bottom: solid 1px transparent;
+}
+
+.btn_footer:hover {
+    border-bottom: solid 1px #ffc846;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1078px) {
+    main {
+        flex-direction: column;
+    }
+
+    .flyleaf {
+        margin-bottom: 2em;
+    }
 }
