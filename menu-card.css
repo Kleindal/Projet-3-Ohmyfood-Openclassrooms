@@ -37,23 +37,23 @@ header, footer {
 #aside-top {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
-    margin: 1em;
+    font-size: 2vh;
+    margin: 3vh;
 }
 
-.container {
-    display: inline-grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    width: 20vh;
-    height: 50vh;
-    text-align: center;
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 75vh;
+    height: 120vh;
+    margin: auto;
+    padding: 7vh;
     font-size: 1vh;
-    padding: 2vh;
-}
-
-.menu-card-a {
-    background-color: #fadcdc;
+    text-align: center;
+    border: solid 1px blue;
+    background-color: #fadcdc
 }
 
 .fas {
@@ -68,28 +68,64 @@ header, footer {
 
 #title-card-a {
     font-family: 'Devonshire', cursive;
-    font-size: 5vh;
+    font-size: 4vh;
     text-align: center;
     color: #460000;
-
 }
 
-
-.name-part-a {
-    font-family: 'Kalam', cursive;
-    font-size: 3vh;
-}
-
-.title-card-a {
-    font-size: 7vh;
+.end-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-family: 'Devonshire', cursive;
+    font-size: 3.5vh;
+    text-align: center;
+    color: #460000;
 }
-.title-card-b {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
+
+.end-container .fas {
+    font-size: 4vh;
+}
+
+#title-card-b {
+    font-size: 5vh;
     letter-spacing: 2px;
-    background-color: linear-gradient(45deg, #ffc846, #5aa58c);
+    background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+#title-card-c {
+    font-size: 5vh;
+    background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#title-card-d {
+    font-size: 5vh;
+    background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.name-section-a {
+    font-family: 'Kalam', cursive;
+    font-size: 2.5vh;
+}
+.name-section-b {
+    font-family: 'Redressed', cursive;
+    font-size: 2.5vh;
+}
+.name-section-c {
+    font-family: 'Kalam', cursive;
+    font-size: 2.5vh;
+}
+.name-section-d {
+    font-family: 'Kalam', cursive;
+    font-size: 2.5vh;
+}
+
 
 .title-card-c {
 
@@ -98,23 +134,13 @@ header, footer {
 
 }
 
-.container{
-    position: relative;
-    padding: 1em;
-    width: 70vh;
-    height: 100vh;
-    border: solid 1px blue;
-}
 
 .first-section, .second-section, .third-section {
-    width: 90vh;
-    font-family: 'Dosis', sans-serif;
-    font-size: 30px;
-    border: solid 1px green;
+    font-family: 'Kalam', sans-serif;
 }
 
 .name-part-b {
-    width: 100%;
+    width: 100vh;
     font-size: 1.2em;
 }
 
@@ -124,42 +150,39 @@ header, footer {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1em;
+    margin-top: 2vh;
     text-align: center;
 }
 
 .text-deviser-a {
     width: 17vh;
-    height: 1vh;
+    height: 0.5vh;
     background-color: rgb(70, 0, 0);
 }
 
 .text-deviser-b {
     width: 17vh;
     height: 1vh;
-
 }
 
 .text-deviser-c {
     width: 17vh;
     height: 1vh;
-
 }
 
 .text-deviser-d {
     width: 17vh;
     height: 1vh;
-
 }
 
 .recipes-list {
     display: grid;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
     grid-template-columns: auto auto;
     justify-content: center;
     grid-gap: 3vh;
-    margin-bottom: 5vh;
-    line-height: 2em;
-    border: solid 1 px royalblue;
+    line-height: 4vh;
 }
 
 .recipe {
@@ -220,9 +243,7 @@ footer {
         font-size: 0.5em;
     }
 
-    .name-part-a {
-        font-size: 0.6em;
-    }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -233,9 +254,7 @@ footer {
         font-size: 0.7em;
     }
 
-    .name-part-a {
-        font-size: 0.9em;
-    }
+   
 }
 
 @media screen and (max-width: 750px) {
@@ -246,7 +265,5 @@ footer {
         font-size: 0.8em;
     }
 
-    .name-part-a {
-        font-size: 1em;
-    }
+    
 }
