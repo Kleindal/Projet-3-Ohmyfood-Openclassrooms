@@ -19,6 +19,12 @@ header h1{
     margin-bottom: 1em;
 }
 
+h1:hover,
+h1:active,
+h1:visited {
+    color: #ffc846;
+}
+
 header, footer {
     display: block;
     width: 100%;
