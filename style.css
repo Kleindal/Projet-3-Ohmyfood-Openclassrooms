@@ -11,25 +11,21 @@ body {
 }
 
 header h1{
+    display: block;
     line-height: 100px;
     letter-spacing: -2px;
-    font-size: 2.5em;
+    font-size: 2vh;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 1vh;
 }
 
-a:hover,
-a:active,
-a:visited,
-a:focus,
-a:link {
+a:hover, a:active, a:visited, a:focus, a:link {
     color: #ffc846 !important;
     color: -webkit-link #ffc846;
 }
 
 header, footer {
-    display: block;
     width: 100vh;
     font-family: "Montserrat", sans-serif;
     color: #ffc846;
@@ -40,20 +36,16 @@ header, footer {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    /* grid-template-areas: 
-    ".grid1 grid.2"
-    ".grid3 .grid4"; */
-    grid-gap: 3em;
-    margin-bottom: 2em;
-    transition: 0.5s
+    grid-gap: 3vh;
+    transition: 2s;
 }
 
 
 .flyleaf {
     display: flex;
     justify-content: center;
-    width: 45vh;
-    height: 60vh;
+    width: 50vh;
+    height: 70vh;
     margin: auto;
     align-items: center;
     text-align: center;
@@ -65,33 +57,65 @@ header, footer {
     box-shadow: 5px 5px 15px rgba(150,150,150,0.5);
 }
 
-.menu-1b {
-    font-family: ;
+.fas {
+    font-size: 7vh;
+    color: #9c47fc;
+    display: block;
+    background: -webkit-linear-gradient(#f05a64, #fa8c6e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu-a {
+    font-family: 'Devonshire', cursive;
+    font-size: 5vh;
+    color: #480000;
     background-color: #fadcdc;
 }
 
-.menu-2 {
-    font-family: ;
-    background-color: linear-gradient(#ffc846,#5aa58c);
+.menu-b {
+    font-family: 'Redressed', cursive;
+    font-size: 5vh;
+    background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.menu-3 {
-    font-family: ;
-    background-color: linear-gradient(#ffc846,#5aa58c);
+.menu-c {
+    font-family: 'Rouge Script', cursive;
+    font-size: 5vh;
+    background: -webkit-linear-gradient(45deg,#0032e1, #0087fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.menu-4 {
-    font-family: ;
-    background-color: linear-gradient(#ffc846,#5aa58c);
+.menu-d {
+    font-family: 'Caveat', cursive;
+    font-size: 5vh;
+    background: -webkit-linear-gradient(45deg,#329632, #c8ff78);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sub-name {
+    font-family: 'Kalam', cursive;
+    font-size: 5.5vh;
+}
+
+.sub-name-b {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vh;
+    color: #c88232;
 }
 
 .hover-shake:hover {
-    animation: shake 150ms;
+    animation: shake 200ms;
     animation-iteration-count: 2;
 }
 
 .hover-slide:hover {
-    animation: slide 150ms;
+    animation: slide 200ms;
     animation-iteration-count: 2;
 }
 
@@ -132,17 +156,17 @@ aside {
     display: flex;
     justify-content: center;
     text-align: center;
-    line-height: 40px;
+    line-height: 2vh;
 }
 
 .btn_coming_soon {
-    margin-bottom: 5em;
-    padding: 5px;
-    width: 9em;
+    margin-bottom: 5vh;
+    padding: 1vh;
+    width: 9.5em;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
-    font-weight: 400;
+    font-size: 2vh;
+    font-weight: 600;
     border-radius: 10px;
     color: #ffc846;
     background-color: #5aa58c;
@@ -151,7 +175,7 @@ aside {
 #coming_soon_animation {
     content: attr(data-text);
     overflow: hidden;
-    max-width: 9em;
+    max-width: 10em;
     white-space: nowrap;
     animation: loading 3.5s linear infinite;
 }
@@ -168,8 +192,8 @@ footer {
     position: fixed;
     bottom: 0;
     justify-content: space-between;
-    padding: 1em;
-    line-height: 2em;
+    padding: 1vh;
+    line-height: 1vh;
 }
 
 .btn_footer {
@@ -181,7 +205,7 @@ footer {
     border-bottom: solid 1px #ffc846;
 }
 
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 500px) {
     main {
         flex-direction: column;
     }
