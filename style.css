@@ -45,6 +45,10 @@ header, footer {
     cursor: pointer;
 }
 
+.flyleaf:hover {
+    box-shadow: 5px 5px 15px rgba(150,150,150,0.5);
+}
+
 .menu-1b {
     background-color: #fadcdc;
 }
@@ -61,16 +65,29 @@ header, footer {
 
 }
 
-.hover-shake:hover,
 .hover-shake:hover {
     animation: shake 150ms;
-    animation-iteration-count: 4;
+    animation-iteration-count: 2;
 }
 
-.hover-slide:hover,
 .hover-slide:hover {
     animation: slide 150ms;
-    animation-iteration-count: 4;
+    animation-iteration-count: 2;
+}
+
+@keyframes shake {
+    from {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(2deg);
+    }
+    75% {
+      transform: rotate(-2deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
 }
 
 @keyframes slide {
@@ -91,21 +108,6 @@ header, footer {
     }
 }
 
-@keyframes shake {
-    from {
-      transform: rotate(0deg);
-    }
-    25% {
-      transform: rotate(1deg);
-    }
-    75% {
-      transform: rotate(-1deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-}
-
 aside {
     display: flex;
     justify-content: center;
@@ -115,7 +117,7 @@ aside {
 
 .btn_coming_soon {
     margin-bottom: 5em;
-    padding: 5px !important;
+    padding: 5px;
     width: 9em;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -126,18 +128,14 @@ aside {
     background-color: #5aa58c;
 }
 
-.btn_coming_soon:hover {
-    color: #5aa58c;
-    background-color: #ffc846;
-}
-
 #coming_soon_animation {
     content: attr(data-text);
     overflow: hidden;
     max-width: 9em;
     white-space: nowrap;
-    animation: loading 3s linear;
+    animation: loading 3.5s linear infinite;
 }
+
 @keyframes loading {
     0% {
         max-width: 0;
@@ -154,13 +152,27 @@ footer {
     line-height: 2em;
 }
 
-a {
+.btn_footer {
     color: #ffc846;
-    text-decoration: none;
+    border-bottom: solid 1px transparent;
+}
+
+.btn_footer:hover {
+    border-bottom: solid 1px #ffc846;
 }
 
 @media screen and (max-width: 600px) {
     main {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1078px) {
+    main {
+        flex-direction: column;
+    }
+
+    .flyleaf {
+        margin-bottom: 2em;
     }
 }
