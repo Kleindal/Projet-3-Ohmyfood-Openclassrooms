@@ -41,24 +41,48 @@ header, footer {
     margin: 1em;
 }
 
-/* La note enchantée */
-.container, .menu-name {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
+.container {
+    display: inline-grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    width: 20vh;
+    height: 50vh;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1vh;
+    padding: 2vh;
 }
 
-.title-card-a, .name-part-a, .price {
+.menu-card-a {
+    background-color: #fadcdc;
+}
+
+.fas {
+    font-size: 7vh;
+    color: #f05a64;
+    display: block;
+    background: -webkit-linear-gradient(45deg,#f05a64, #fa8c6e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#title-card-a {
+    font-family: 'Devonshire', cursive;
+    font-size: 5vh;
+    text-align: center;
     color: #460000;
+
+}
+
+
+.name-part-a {
+    font-family: 'Kalam', cursive;
+    font-size: 3vh;
 }
 
 .title-card-a {
-    font-size: 40px;
+    font-size: 7vh;
+    font-family: 'Devonshire', cursive;
 }
 .title-card-b {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -77,13 +101,13 @@ header, footer {
 .container{
     position: relative;
     padding: 1em;
-    width: 80%;
-    height: auto;
+    width: 70vh;
+    height: 100vh;
     border: solid 1px blue;
 }
 
 .first-section, .second-section, .third-section {
-    width: 90%;
+    width: 90vh;
     font-family: 'Dosis', sans-serif;
     font-size: 30px;
     border: solid 1px green;
@@ -94,41 +118,58 @@ header, footer {
     font-size: 1.2em;
 }
 
-
 .menu-name {
+    display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 1em;
     text-align: center;
 }
 
-.text-deviser-b {
-    width: 50%;
-    height: 10px;
+.text-deviser-a {
+    width: 17vh;
+    height: 1vh;
     background-color: rgb(70, 0, 0);
+}
+
+.text-deviser-b {
+    width: 17vh;
+    height: 1vh;
+
+}
+
+.text-deviser-c {
+    width: 17vh;
+    height: 1vh;
+
+}
+
+.text-deviser-d {
+    width: 17vh;
+    height: 1vh;
+
 }
 
 .recipes-list {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    ".text-deviser .name-part-1 .name-part-1 .text-deviser"
-    "recipe recipe recipe price"
-    "recipe recipe recipe price"
-    "recipe recipe recipe price"
-    "recipe recipe recipe price";
-    width: 100%;
-    margin-bottom: 5em;
+    justify-content: center;
+    grid-gap: 3vh;
+    margin-bottom: 5vh;
     line-height: 2em;
-    border: solid 2 px royalblue;
+    border: solid 1 px royalblue;
 }
 
 .recipe {
     text-align: left;
+    font-size: 2vh;
 }
 
 .price {
+    font-weight: bold;
+    font-size: 2vh;
     text-align: right;
 }
 
