@@ -5,6 +5,11 @@
     text-decoration: none;
 }
 
+/* Suppression de la supperposition du footer */
+body {
+    margin-bottom: 100px;
+}
+
 header h1{
     line-height: 100px;
     letter-spacing: -2px;
