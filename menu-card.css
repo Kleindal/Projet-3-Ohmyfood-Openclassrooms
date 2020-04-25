@@ -11,29 +11,32 @@ body {
 }
 
 header h1{
-    line-height: 100px;
+    padding: 2vh;
     letter-spacing: -2px;
-    font-size: 2.5em;
+    font-size: 5vh;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 1em;
 }
 
-a:hover,
-a:active,
-a:visited {
+a:active, a:hover a:link, a:visited{
     color: #ffc846;
     color: -webkit-link #ffc846;
 }
 
 header, footer {
-    display: block;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
     font-family: "Montserrat", sans-serif;
     color: #ffc846;
     background-color: #5aa58c;
 }
 
+header {
+    display: inline-block;
+    margin-bottom: 1em;
+    margin: auto;
+}
 #aside-top {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -46,14 +49,27 @@ header, footer {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
+    overflow: auto;
     width: 75vh;
     height: 120vh;
     margin: auto;
-    padding: 7vh;
+    padding: 5vh;
     font-size: 1vh;
     text-align: center;
     border: solid 1px blue;
-    background-color: #fadcdc
+}
+
+.menu-card-a {
+    background-color: #fadcdc;
+}
+.menu-card-b {
+
+}
+.menu-card-c {
+
+}
+.menu-card-d {
+
 }
 
 .fas {
@@ -66,13 +82,11 @@ header, footer {
     -webkit-text-fill-color: transparent;
 }
 
-#title-card-a {
-    font-family: 'Devonshire', cursive;
-    font-size: 4vh;
-    text-align: center;
-    color: #460000;
-}
 
+/* Bas de page de la note enchantée */
+.end-container .fas {
+    font-size: 4vh;
+}
 .end-container {
     display: flex;
     flex-direction: row;
@@ -83,31 +97,36 @@ header, footer {
     color: #460000;
 }
 
-.end-container .fas {
-    font-size: 4vh;
-}
 
-#title-card-b {
+
+.title-card-a {
+    font-family: 'Devonshire', cursive;
+    font-size: 4vh;
+    text-align: center;
+    color: #460000;
+}
+.title-card-b {
+    font-family: 'Redressed', cursive;
     font-size: 5vh;
     letter-spacing: 2px;
     background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-#title-card-c {
+.title-card-c {
+    font-size: 5vh;
+    background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.title-card-d {
     font-size: 5vh;
     background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-#title-card-d {
-    font-size: 5vh;
-    background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 .name-section-a {
     font-family: 'Kalam', cursive;
@@ -127,20 +146,27 @@ header, footer {
 }
 
 
-.title-card-c {
-
-}
-.title-card-d {
-
-}
-
 
 .first-section, .second-section, .third-section {
     font-family: 'Kalam', sans-serif;
 }
 
+.first-section-b, .second-section-b, .third-section-b {
+    font-family: 'Redressed', cursive;
+    letter-spacing: 2px;
+}
+
+.first-section-b {
+    color:#c88232;
+}
+.second-section-b {
+    color: #b300b3;
+}
+.third-section-b {
+    color: #8a2be2;
+}
 .name-part-b {
-    width: 100vh;
+    width: 100%;
     font-size: 1.2em;
 }
 
@@ -155,46 +181,53 @@ header, footer {
 }
 
 .text-deviser-a {
-    width: 17vh;
+    width: 15vh;
     height: 0.5vh;
     background-color: rgb(70, 0, 0);
 }
-
-.text-deviser-b {
+.text-deviser-b-orange, .text-deviser-b-pink, .text-deviser-b-purple {
     width: 17vh;
     height: 1vh;
 }
-
+.text-deviser-b-orange {
+    background-color: #c88232;
+}
+.text-deviser-b-pink {
+    background-color: #b300b3;
+}
+.text-deviser-b-purple {
+    background-color: #8a2be2;
+}
 .text-deviser-c {
     width: 17vh;
     height: 1vh;
 }
-
 .text-deviser-d {
     width: 17vh;
     height: 1vh;
 }
 
+
 .recipes-list {
     display: grid;
+    overflow: auto;
     margin-top: 1vh;
     margin-bottom: 2vh;
     grid-template-columns: auto auto;
-    justify-content: center;
+    justify-content: space-between;
     grid-gap: 3vh;
     line-height: 4vh;
 }
-
 .recipe {
     text-align: left;
     font-size: 2vh;
 }
-
 .price {
     font-weight: bold;
     font-size: 2vh;
     text-align: right;
 }
+
 
 footer {
     display: flex;
