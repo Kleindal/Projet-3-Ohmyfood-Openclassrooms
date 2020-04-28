@@ -10,7 +10,7 @@ body {
     margin-bottom: 100px;
 }
 
-header h1{
+header h1 {
     padding: 2vh;
     letter-spacing: -2px;
     font-size: 5vh;
@@ -44,7 +44,8 @@ header {
     margin: 3vh;
 }
 
-.container{
+
+.container {
     display: grid;
     grid-template-columns: auto;
     gap: 3vh;
@@ -59,11 +60,12 @@ header {
     border: solid 1px blue;
 }
 
+/* Spécifications graphiques des menus dépendant de .container*/
 .menu-card-a {
     background-color: #fadcdc;
 }
 .menu-card-b {
-
+    padding: 5vh;
 }
 .menu-card-c {
 
@@ -72,6 +74,8 @@ header {
 
 }
 
+
+/* Icone */
 .fas {
     font-size: 7vh;
     color: #f05a64;
@@ -97,6 +101,7 @@ header {
 }
 
 
+/* Le nom du Menu */
 .title-card-a {
     font-family: 'Devonshire', cursive;
     font-size: 4vh;
@@ -125,35 +130,15 @@ header {
 }
 
 
-
-.name-section-a {
-    font-family: 'Kalam', cursive;
-    font-size: 2.5vh;
-}
-.name-section-b {
-    font-family: 'Redressed', cursive;
-    font-size: 2.5vh;
-}
-.name-section-c {
-    font-family: 'Kalam', cursive;
-    font-size: 2.5vh;
-}
-.name-section-d {
-    font-family: 'Kalam', cursive;
-    font-size: 2.5vh;
-}
-
-
-
+/* Contenu de chaque partie du menu */
 .first-section, .second-section, .third-section {
     font-family: 'Kalam', sans-serif;
 }
 
 .first-section-b, .second-section-b, .third-section-b {
     font-family: 'Redressed', cursive;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
-
 .first-section-b {
     color:#c88232;
 }
@@ -163,11 +148,28 @@ header {
 .third-section-b {
     color: #8c5aff;
 }
-.name-part-b {
+
+
+/* Entrée, plats, dessert */
+.name-part-a {
     width: 100%;
-    font-size: 3vh;
+    font-size: 2.5vh;
 }
 
+.name-part-b {
+    width: 100%;
+    font-size: 2.5vh;
+}
+.name-part-c {
+    width: 100%;
+    font-size: 2.5vh;
+}
+.name-part-d {
+    width: 100%;
+    font-size: 2.5vh;
+}
+
+/* Alignement name-part + diviseurs */
 .menu-name {
     display: flex;
     flex-direction: row;
@@ -178,29 +180,53 @@ header {
     text-align: center;
 }
 
-.text-deviser-a {
-    width: 20%;
+.deviser-a {
+    width: 30%;
     height: 0.5vh;
+    border-radius: 50%;
     background-color: rgb(70, 0, 0);
 }
-.text-deviser-b-orange, .text-deviser-b-pink, .text-deviser-b-purple {
-    width: 20%;
-    height: 1vh;
+
+.deviser-b {
+    width: auto;
+    height: 0.3vh;
 }
-.text-deviser-b-orange {
+
+.deviser-c {
+    width: auto;
+    height: 0.3vh;
+}
+
+.deviser-d {
+    width: auto;
+    height: 0.3vh;
+}
+
+
+.deviser-b_orange-l, .deviser-b_pink-l, .deviser-b_purple-l {
+    border-left: 15vh solid transparent;
+    border-bottom: 5px solid;
+}
+.deviser-b_orange-r, .deviser-b_pink-r, .deviser-b_purple-r {
+    border-right: 15vh solid transparent;
+    border-bottom: 5px solid;
+}
+.orange-l, .orange-r {
     background-color: #c88232;
 }
-.text-deviser-b-pink {
+.pink-l, .pink-r {
     background-color: #b300b3;
 }
-.text-deviser-b-purple {
+.purple-l, .purple-r {
     background-color: #8a2be2;
 }
-.text-deviser-c {
+
+
+.deviser-c {
     width: 17vh;
     height: 1vh;
 }
-.text-deviser-d {
+.deviser-d {
     width: 17vh;
     height: 1vh;
 }
@@ -210,10 +236,15 @@ header {
     display: grid;
     overflow: auto;
     margin-top: 1vh;
-    margin-bottom: 2vh;
     grid-template-columns: auto auto;
+    grid-gap: 1.5vh;
+    grid-template-areas: 
+    "recipe list"
+    "recipe list"
+    "recipe list";
+    align-items: start;
     justify-content: space-between;
-    grid-gap: 3vh;
+    
     line-height: 4vh;
 }
 .recipe {

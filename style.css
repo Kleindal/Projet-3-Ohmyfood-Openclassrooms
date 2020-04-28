@@ -12,12 +12,12 @@ body {
 
 header h1{
     display: block;
-    line-height: 100px;
+    margin-bottom: 1vh;
+    line-height: 50px;
     letter-spacing: -2px;
     font-size: 2vh;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 1vh;
 }
 
 a:hover, a:active, a:visited, a:focus, a:link {
@@ -37,7 +37,7 @@ header, footer {
     grid-template-columns: auto auto;
     justify-content: center;
     grid-gap: 3vh;
-    transition: 2s;
+    padding: 5vh;
 }
 
 
@@ -163,7 +163,7 @@ aside {
 .btn_coming_soon {
     margin-bottom: 5vh;
     padding: 1vh;
-    width: 9.5em;
+    width: 9.7em;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 2vh;
