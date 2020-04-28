@@ -103,12 +103,14 @@ header {
 
 /* Le nom du Menu */
 .title-card-a {
+    margin-top: 2vh;
     font-family: 'Devonshire', cursive;
     font-size: 4vh;
     text-align: center;
     color: #460000;
 }
 .title-card-b {
+    margin-top: 4vh;
     font-family: 'Redressed', cursive;
     font-size: 5vh;
     letter-spacing: 2px;
@@ -117,14 +119,18 @@ header {
     -webkit-text-fill-color: transparent;
 }
 .title-card-c {
-    font-size: 5vh;
-    background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
+    margin-top: 5vh;
+    font-family: 'Rouge Script', cursive;
+    font-size: 8vh;
+    background: -webkit-linear-gradient(45deg,#0032e1, #0087fa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .title-card-d {
-    font-size: 5vh;
-    background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
+    margin-top: 5vh;
+    font-family: 'Caveat', cursive;
+    font-size: 8vh;
+    background: -webkit-linear-gradient(45deg,#329632, #c8ff78);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
