@@ -57,7 +57,7 @@ header {
     padding: 5vh;
     font-size: 1vh;
     text-align: center;
-    border: solid 1px blue;
+    border: solid 1px rgb(150, 150, 150);
 }
 
 /* Spécifications graphiques des menus dépendant de .container*/
@@ -66,12 +66,6 @@ header {
 }
 .menu-card-b {
     padding: 5vh;
-}
-.menu-card-c {
-
-}
-.menu-card-d {
-
 }
 
 
@@ -187,27 +181,11 @@ header {
 }
 
 .deviser-a {
-    width: 30%;
+    width: 50%;
     height: 0.5vh;
     border-radius: 50%;
     background-color: rgb(70, 0, 0);
 }
-
-.deviser-b {
-    width: auto;
-    height: 0.3vh;
-}
-
-.deviser-c {
-    width: auto;
-    height: 0.3vh;
-}
-
-.deviser-d {
-    width: auto;
-    height: 0.3vh;
-}
-
 
 .deviser-b_orange-l, .deviser-b_pink-l, .deviser-b_purple-l {
     border-left: 15vh solid transparent;
@@ -227,14 +205,40 @@ header {
     background-color: #8a2be2;
 }
 
-
-.deviser-c {
-    width: 17vh;
-    height: 1vh;
+.deviser-c_blue-l, .deviser-c_teal-l, .deviser-c_cyan-l {
+    width  : 30%;
+    height : 0;
+    border-top  : 10px solid white;
+    border-left : 15vh solid transparent;
+    border-bottom-left-radius: 50px;
 }
-.deviser-d {
-    width: 17vh;
-    height: 1vh;
+.deviser-c_blue-r, .deviser-c_teal-r, .deviser-c_cyan-r {
+    width  : 30%;
+    height : 0;
+    border-top: 10px solid white;
+    border-right: 15vh solid transparent;
+    border-bottom-right-radius: 50px;
+}
+.deviser-c_blue-l, .deviser-c_blue-r {
+    background-color: #0032e1;
+}
+.deviser-c_teal-l, .deviser-c_teal-r {
+    background-color: #0057fa;
+}
+.deviser-c_cyan-l, .deviser-c_cyan-r {
+    background-color: #0087fa;
+}
+
+.deviser-d_l, .deviser-d_r {
+    width: 70%;
+    height: 0.5vh;
+    border-radius: 50%;
+}
+.deviser-d_l {
+    background: -webkit-linear-gradient(45deg,#329632, #c8ff78);
+}
+.deviser-d_r {
+    background: -webkit-linear-gradient(45deg,#c8ff78, #329632);
 }
 
 
