@@ -31,10 +31,10 @@ header, footer {
     background-color: #5aa58c;
 }
 
-#aside-top {
+#title-top {
     display: flex;
     justify-content: space-around;
-    width: 100vh;
+    width: 100%;
     margin: 5em auto 5vh auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.5vh;
