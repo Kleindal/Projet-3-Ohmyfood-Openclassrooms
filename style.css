@@ -10,14 +10,21 @@ body {
     margin-bottom: 100px;
 }
 
-header h1{
-    display: block;
-    margin-bottom: 1vh;
-    line-height: 50px;
-    letter-spacing: -2px;
+body header {
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 0;
+    z-index: 1;
     font-size: 2vh;
-    font-weight: bold;
-    text-align: center;
+    line-height: 7vh;
+}
+
+header, footer {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    color: #ffc846;
+    background-color: #5aa58c;
 }
 
 a:hover, a:active, a:visited, a:focus, a:link {
@@ -25,19 +32,15 @@ a:hover, a:active, a:visited, a:focus, a:link {
     color: -webkit-link #ffc846;
 }
 
-header, footer {
-    width: 100vh;
-    font-family: "Montserrat", sans-serif;
-    color: #ffc846;
-    background-color: #5aa58c;
-}
 
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    grid-gap: 3vh;
+    gap: 3vh;
+    margin-top: 8vh;
     padding: 5vh;
+    border: solid 2vh transparent;
 }
 
 
@@ -161,7 +164,7 @@ aside {
 }
 
 .btn_coming_soon {
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
     padding: 1vh;
     width: 9.7em;
     text-align: center;
@@ -198,6 +201,7 @@ footer {
 }
 
 .btn_footer {
+    font-size: 2vh;
     color: #ffc846;
     border-bottom: solid 1px transparent;
 }
@@ -206,12 +210,21 @@ footer {
     border-bottom: solid 1px #ffc846;
 }
 
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 600px) {
+    body header {
+      font-size: 2vh;
+    }
+
     main {
         flex-direction: column;
     }
 
-}
+    .btn_footer {
+        font-size: 1.5vh;
+    }
+
+  }
 
 @media screen and (max-width: 1080px) {
     main {
@@ -221,8 +234,4 @@ footer {
     .grid-container {
         grid-template-columns: auto;
     }
-}
-
-@media screen and (max-width: 1200px) {
-
 }

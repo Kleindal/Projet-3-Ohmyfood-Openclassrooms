@@ -5,16 +5,7 @@
     text-decoration: none;
 }
 
-/* Suppression de la supperposition du footer */
 body {
-    margin-bottom: 100px;
-}
-
-header h1 {
-    padding: 2vh;
-    letter-spacing: -2px;
-    font-size: 5vh;
-    font-weight: bold;
     text-align: center;
 }
 
@@ -22,45 +13,58 @@ a:active, a:hover a:link, a:visited {
     color: #ffc846;
     color: -webkit-link #ffc846;
 }
+body header {
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    z-index: 1;
+    font-size: 2vh;
+    line-height: 8.5vh;
+}
 
 header, footer {
-    margin-left: 0;
-    margin-right: 0;
     width: 100%;
     font-family: "Montserrat", sans-serif;
     color: #ffc846;
     background-color: #5aa58c;
 }
 
-header {
-    display: inline-block;
-    margin-bottom: 1em;
-    margin: auto;
-}
 #aside-top {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100vh;
+    margin: 5em auto 5vh auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2vh;
-    margin: 3vh;
+    font-size: 2.5vh;
+    align-self: flex-start;
 }
 
+main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: row;
+    gap: 5vh;
+    justify-content: center;
+
+    height: auto;
+    font-size: 1vh;
+    text-align: center;
+}
 
 .container {
     display: grid;
-    grid-template-columns: auto;
-    gap: 3vh;
-    justify-content: space-around;
-    overflow: auto;
-    width: 70vh;
+    gap: 5vh;
+    justify-content: center;
+    width: 75vh;
     height: auto;
-    margin: auto;
-    padding: 5vh;
     font-size: 1vh;
     text-align: center;
-    border: solid 1px rgb(150, 150, 150);
 }
 
-/* Spécifications graphiques des menus dépendant de .container*/
+
+/* Spécifications graphiques des menus dépendant du main*/
 .menu-card-a {
     background-color: #fadcdc;
 }
@@ -274,8 +278,8 @@ footer {
     position: fixed;
     bottom: 0px;
     justify-content: space-between;
-    padding: 1em;
-    line-height: 2em;
+    padding: 0 1.5vh 0 1.5vh;
+    line-height: 7.5vh;
 }
 
 .hover-shake:hover {
@@ -299,6 +303,7 @@ footer {
 }
 
 .btn_footer {
+    font-size: 2vh;
     color: #ffc846;
     border-bottom: solid 1px transparent;
 }
@@ -307,35 +312,15 @@ footer {
     border-bottom: solid 1px #ffc846;
 }
 
-@media screen and (max-width: 400px) {
-    .recipes-list {
-        flex-direction: column;
-        flex-wrap: wrap-reverse;
-        justify-items: self-end;
-        font-size: 0.5em;
-    }
-
-    
-}
-
 @media screen and (max-width: 600px) {
-    .recipes-list {
-        flex-direction: column;
-        flex-wrap: wrap-reverse;
-        justify-items: self-end;
-        font-size: 0.7em;
+    body header {
+      font-size: 2vh;
     }
 
-   
-}
-
-@media screen and (max-width: 750px) {
-    .recipes-list {
-        flex-direction: column;
-        flex-wrap: wrap-reverse;
-        justify-items: self-end;
-        font-size: 0.8em;
+    footer {
+        font-size: 1.5vh;
     }
+  }
 
-    
-}
+
+  
