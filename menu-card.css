@@ -35,9 +35,9 @@ header, footer {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin: 5em auto 5vh auto;
+    margin: 7.5em auto 2em auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.5vh;
+    font-size: 1.5vh;
     align-self: flex-start;
 }
 
@@ -45,32 +45,30 @@ main {
     display: grid;
     grid-template-columns: auto;
     grid-auto-flow: row;
-    gap: 5vh;
     justify-content: center;
 
-    height: auto;
-    font-size: 1vh;
-    text-align: center;
 }
 
 .container {
-    display: grid;
-    gap: 5vh;
-    justify-content: center;
-    width: 75vh;
+    margin: 2em;
     height: auto;
+    margin: auto;
     font-size: 1vh;
     text-align: center;
 }
 
 
 /* Spécifications graphiques des menus dépendant du main*/
-.menu-card-a {
+.background-a {
     background-color: #fadcdc;
 }
-.menu-card-b {
-    padding: 5vh;
+
+.background-a, .background-b, .background-c, .background-d {
+    padding: 3em;
+    margin-bottom: 15em;
+    border: solid 1px rgba(150,150,150,0.5);
 }
+
 
 
 /* Icone */
@@ -101,14 +99,12 @@ main {
 
 /* Le nom du Menu */
 .title-card-a {
-    margin-top: 2vh;
     font-family: 'Devonshire', cursive;
     font-size: 4vh;
     text-align: center;
     color: #460000;
 }
 .title-card-b {
-    margin-top: 4vh;
     font-family: 'Redressed', cursive;
     font-size: 5vh;
     letter-spacing: 2px;
@@ -117,7 +113,6 @@ main {
     -webkit-text-fill-color: transparent;
 }
 .title-card-c {
-    margin-top: 5vh;
     font-family: 'Rouge Script', cursive;
     font-size: 8vh;
     background: -webkit-linear-gradient(45deg,#0032e1, #0087fa);
@@ -125,7 +120,6 @@ main {
     -webkit-text-fill-color: transparent;
 }
 .title-card-d {
-    margin-top: 5vh;
     font-family: 'Caveat', cursive;
     font-size: 8vh;
     background: -webkit-linear-gradient(45deg,#329632, #c8ff78);
@@ -133,6 +127,11 @@ main {
     -webkit-text-fill-color: transparent;
 }
 
+.title-card-a, .title-card-b, .title-card-c, .title-card-d {
+    margin-top: 0.5em;
+    text-align: center;
+    margin-bottom: 2em;
+}
 
 /* Contenu de chaque partie du menu */
 .first-section, .second-section, .third-section {
@@ -190,7 +189,6 @@ main {
     border-radius: 50%;
     background-color: rgb(70, 0, 0);
 }
-
 .deviser-b_orange-l, .deviser-b_pink-l, .deviser-b_purple-l {
     border-left: 15vh solid transparent;
     border-bottom: 5px solid;
@@ -306,10 +304,6 @@ footer {
     font-size: 2vh;
     color: #ffc846;
     border-bottom: solid 1px transparent;
-}
-
-.btn_footer:hover {
-    border-bottom: solid 1px #ffc846;
 }
 
 @media screen and (max-width: 600px) {
