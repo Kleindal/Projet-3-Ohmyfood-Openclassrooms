@@ -58,7 +58,54 @@ a:hover, a:active, a:visited, a:focus, a:link {
 
 .flyleaf:hover {
     box-shadow: 5px 5px 15px rgba(150,150,150,0.5);
+    z-index: 2;
+    -webkit-animation: fadein 1s ease-in;
+    -moz-animation: fadein 1s ease-in;
+    -o-animation: fadein 1s ease-in;
+    -ms-animation: fadein 1s ease-in;
+    animation: fadein 1s ease-in;
+    -webkit-transition: all 1s ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 1s ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 1s ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 1s ease-in;
 }
+
+@keyframes fadein {
+    from {
+        opacity:0.5;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0.5;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0.5;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 .fas {
     font-size: 7vh;
