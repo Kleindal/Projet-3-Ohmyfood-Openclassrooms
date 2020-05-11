@@ -211,9 +211,10 @@ aside {
 }
 
 .btn_coming_soon {
-    margin-bottom: 10vh;
-    padding: 1vh;
-    width: 9.7em;
+    display: inline-block;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    width: 13em;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 2vh;
@@ -226,9 +227,9 @@ aside {
 #coming_soon_animation {
     content: attr(data-text);
     overflow: hidden;
-    max-width: 10em;
+    max-width: 1em;
     white-space: nowrap;
-    animation: loading 3.5s linear infinite;
+    animation: loading 0.5s linear infinite;
 }
 
 @keyframes loading {
