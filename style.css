@@ -17,7 +17,7 @@ body header {
     top: 0;
     z-index: 1;
     font-size: 2vh;
-    line-height: 7vh;
+    line-height: 3em;
 }
 
 header, footer {
@@ -37,18 +37,17 @@ a:hover, a:active, a:visited, a:focus, a:link {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    gap: 3vh;
-    margin-top: 8vh;
-    padding: 5vh;
-    border: solid 2vh transparent;
+    gap: 2.5em;
+    margin-top: 6.5em;
+    border: solid 1em transparent;
 }
 
 
 .flyleaf {
     display: flex;
     justify-content: center;
-    width: 50vh;
-    height: 70vh;
+    width: 10em;
+    height: 15em;
     margin: auto;
     align-items: center;
     text-align: center;
@@ -165,11 +164,6 @@ a:hover, a:active, a:visited, a:focus, a:link {
     animation-iteration-count: 2;
 }
 
-.hover-slide:hover {
-    animation: slide 200ms;
-    animation-iteration-count: 2;
-}
-
 @keyframes shake {
     from {
       transform: rotate(0deg);
@@ -207,14 +201,16 @@ aside {
     display: flex;
     justify-content: center;
     text-align: center;
-    line-height: 2vh;
+    line-height: 1em;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
 }
 
 .btn_coming_soon {
-    display: inline-block;
-    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
     padding: 0.5em;
-    width: 13em;
+    width: 10em;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 2vh;
@@ -224,19 +220,35 @@ aside {
     background-color: #5aa58c;
 }
 
-#coming_soon_animation {
-    content: attr(data-text);
+#dot_animation {
+    border-right: 2px solid #FACE48;
     overflow: hidden;
-    max-width: 1em;
-    white-space: nowrap;
-    animation: loading 0.5s linear infinite;
+    animation: hand_writing 2s steps(3, end) infinite, bar 600ms infinite;
 }
 
-@keyframes loading {
+@keyframes hand_writing {
     0% {
-        max-width: 0;
+        width: 0%;
+    }
+    50% {
+        width: 10%;
+    }
+    100 {
+        width: 30%;
     }
 }
+@keyframes bar {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #ffc846;
+    }
+    100% {
+        border-color: transparent;
+    }
+}
+
 
 footer {
     display: flex;
@@ -244,18 +256,13 @@ footer {
     position: fixed;
     bottom: 0;
     justify-content: space-between;
-    padding: 1vh;
+    padding: 0.5em;
     line-height: 1vh;
 }
 
 .btn_footer {
     font-size: 2vh;
     color: #ffc846;
-    border-bottom: solid 1px transparent;
-}
-
-.btn_footer:hover {
-    border-bottom: solid 1px #ffc846;
 }
 
 
@@ -274,7 +281,7 @@ footer {
 
   }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1000px) {
     main {
         flex-direction: column;
     }
