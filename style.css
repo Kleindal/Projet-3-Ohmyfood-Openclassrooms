@@ -257,8 +257,7 @@ footer {
     position: fixed;
     bottom: 0;
     justify-content: space-between;
-    padding: 0.5em;
-    line-height: 1vh;
+    padding: 1em;
 }
 
 .btn_footer {
@@ -266,6 +265,27 @@ footer {
     color: #ffc846;
 }
 
+
+/* Mentions légales */
+.title_mentions {
+    float: left;
+    padding-right: 0.5em;
+    font: bold 5vh 'Montserrat', sans-serif;
+    color: #ffc846;
+    
+}
+.grid_mentions {
+    display: block;
+    justify-content: center;
+    margin: 10em auto 10em auto;
+    width: 60%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;
+}
+
+.grid_mentions p {
+    
+}
 
 @media screen and (max-width: 600px) {
     body header {
