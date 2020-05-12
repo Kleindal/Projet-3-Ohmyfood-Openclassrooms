@@ -21,7 +21,7 @@ body header {
     top: 0;
     z-index: 1;
     font-size: 2vh;
-    line-height: 8.5vh;
+    line-height: 4em;
 }
 
 header, footer {
@@ -36,8 +36,7 @@ header, footer {
     justify-content: space-around;
     width: 100%;
     margin: 7.5em auto 2em auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5vh;
+    font: 1.5vh 'Verdana', 'Geneva', 'Tahoma', sans-serif;
     align-self: flex-start;
 }
 
@@ -89,8 +88,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-family: 'Devonshire', cursive;
-    font-size: 3.5vh;
+    font: 3.5vh 'Devonshire', cursive;
     text-align: center;
     color: #460000;
 }
@@ -98,29 +96,25 @@ main {
 
 /* Le nom du Menu */
 .title-card-a {
-    font-family: 'Devonshire', cursive;
-    font-size: 4vh;
+    font: 4vh 'Devonshire', cursive;
     text-align: center;
     color: #460000;
 }
 .title-card-b {
-    font-family: 'Redressed', cursive;
-    font-size: 5vh;
+    font: 5vh 'Redressed', cursive;
     letter-spacing: 2px;
     background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .title-card-c {
-    font-family: 'Rouge Script', cursive;
-    font-size: 8vh;
+    font: 8vh 'Rouge Script', cursive;
     background: -webkit-linear-gradient(45deg,#0032e1, #0087fa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .title-card-d {
-    font-family: 'Caveat', cursive;
-    font-size: 8vh;
+    font: 8vh 'Caveat', cursive;
     background: -webkit-linear-gradient(45deg,#329632, #c8ff78);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -128,8 +122,8 @@ main {
 
 .title-card-a, .title-card-b, .title-card-c, .title-card-d {
     margin-top: 0.5em;
-    text-align: center;
     margin-bottom: 2em;
+    text-align: center;
 }
 
 /* Contenu de chaque partie du menu */
@@ -207,15 +201,15 @@ main {
 }
 
 .deviser-c_blue-l, .deviser-c_teal-l, .deviser-c_cyan-l {
-    width  : 30%;
-    height : 0;
-    border-top  : 10px solid white;
-    border-left : 15vh solid transparent;
+    width : 30%;
+    height: 0;
+    border-top: 10px solid white;
+    border-left: 15vh solid transparent;
     border-bottom-left-radius: 50px;
 }
 .deviser-c_blue-r, .deviser-c_teal-r, .deviser-c_cyan-r {
-    width  : 30%;
-    height : 0;
+    width: 30%;
+    height: 0;
     border-top: 10px solid white;
     border-right: 15vh solid transparent;
     border-bottom-right-radius: 50px;
@@ -310,8 +304,7 @@ footer {
         text-align: left;
     }
     .price {
-        font-weight: bold;
-        font-size: 1.4vh;
+        font: bold 1.4vh;
         text-align: right;
     }
   }
