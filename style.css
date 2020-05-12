@@ -39,6 +39,7 @@ a:hover, a:active, a:visited, a:focus, a:link {
     justify-content: center;
     gap: 2.5em;
     margin-top: 6.5em;
+    padding: 2em;
     border: solid 1em transparent;
 }
 
@@ -281,7 +282,7 @@ footer {
 
   }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     main {
         flex-direction: column;
     }
