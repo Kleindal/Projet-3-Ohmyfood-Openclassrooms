@@ -14,10 +14,11 @@ body header {
     display: flex;
     flex-wrap: nowrap;
     position: fixed;
+    justify-content: center;
     top: 0;
     z-index: 1;
     font-size: 2vh;
-    line-height: 3em;
+    line-height: 4em;
 }
 
 header, footer {
@@ -57,7 +58,7 @@ a:hover, a:active, a:visited, a:focus, a:link {
 }
 
 .flyleaf:hover {
-    box-shadow: 5px 5px 15px rgba(150,150,150,0.5);
+    box-shadow: 3px 3px 10px rgba(50,50,50,0.5);
     z-index: 2;
     -webkit-animation: fadein 1s ease-in;
     -moz-animation: fadein 1s ease-in;
@@ -81,7 +82,7 @@ a:hover, a:active, a:visited, a:focus, a:link {
         opacity:1;
     }
 }
-@-moz-keyframes fadein { /* sur Firefox */
+@-moz-keyframes fadein { /* Firefox */
     from {
         opacity:0.5;
     }
@@ -89,7 +90,7 @@ a:hover, a:active, a:visited, a:focus, a:link {
         opacity:1;
     }
 }
-@-webkit-keyframes fadein { /* sur Safari et Chrome */
+@-webkit-keyframes fadein { /* Safari et Chrome */
     from {
         opacity:0.5;
     }
@@ -97,7 +98,7 @@ a:hover, a:active, a:visited, a:focus, a:link {
         opacity:1;
     }
 }
-@-o-keyframes fadein { /* sur Opera */
+@-o-keyframes fadein { /* Opera */
     from {
         opacity:0.5;
     }
@@ -118,15 +119,13 @@ a:hover, a:active, a:visited, a:focus, a:link {
 }
 
 .menu-a {
-    font-family: 'Devonshire', cursive;
-    font-size: 5vh;
+    font: 5vh 'Devonshire', cursive;
     color: #480000;
     background-color: #fadcdc;
 }
 
 .menu-b {
-    font-family: 'Redressed', cursive;
-    font-size: 5vh;
+    font: 5vh 'Redressed', cursive;
     letter-spacing: 2px;
     background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
     -webkit-background-clip: text;
@@ -134,29 +133,25 @@ a:hover, a:active, a:visited, a:focus, a:link {
 }
 
 .menu-c {
-    font-family: 'Rouge Script', cursive;
-    font-size: 5vh;
+    font: 5vh 'Rouge Script', cursive;
     background: -webkit-linear-gradient(45deg,#0032e1, #0087fa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .menu-d {
-    font-family: 'Caveat', cursive;
-    font-size: 5vh;
+    font: 5vh 'Caveat', cursive;
     background: -webkit-linear-gradient(45deg,#329632, #c8ff78);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .sub-name {
-    font-family: 'Kalam', cursive;
-    font-size: 5.5vh;
+    font: 5.5vh 'Kalam', cursive;
 }
 
 .sub-name-b {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 5vh;
+    font: 5vh 'Arial', 'Helvetica', sans-serif;
     color: #c88232;
 }
 
@@ -213,9 +208,7 @@ aside {
     padding: 0.5em;
     width: 10em;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2vh;
-    font-weight: 600;
+    font: 600 2vh 'Montserrat', sans-serif;
     border-radius: 10px;
     color: #ffc846;
     background-color: #5aa58c;
@@ -279,8 +272,7 @@ footer {
     justify-content: center;
     margin: 10em auto 10em auto;
     width: 60%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2vh;
+    font: 2vh 'Montserrat', sans-serif;
 }
 
 .grid_mentions p {
