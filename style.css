@@ -39,7 +39,7 @@ a:hover, a:active, a:visited, a:focus, a:link {
     grid-template-columns: auto auto;
     justify-content: center;
     gap: 2.5em;
-    margin-top: 6.5em;
+    margin-top: 5%;
     padding: 2em;
     border: solid 1em transparent;
 }
@@ -198,8 +198,7 @@ aside {
     justify-content: center;
     text-align: center;
     line-height: 1em;
-    margin-top: 3em;
-    margin-bottom: 1.5em;
+    margin: 0.5em auto 7em auto;
 }
 
 .btn_coming_soon {
@@ -243,7 +242,6 @@ aside {
     }
 }
 
-
 footer {
     display: flex;
     flex-wrap: nowrap;
@@ -275,15 +273,16 @@ footer {
     font: 2vh 'Montserrat', sans-serif;
 }
 
-.grid_mentions p {
-    
+@media screen and (max-width: 375px) {
+    .grid-container {
+        margin-top: 0.5em;
+    }
 }
 
 @media screen and (max-width: 600px) {
     body header {
-      font-size: 2vh;
+        font-size: 2vh;
     }
-
     main {
         flex-direction: column;
     }
@@ -291,8 +290,7 @@ footer {
     .btn_footer {
         font-size: 1.5vh;
     }
-
-  }
+}
 
 @media screen and (max-width: 1024px) {
     main {
@@ -301,5 +299,6 @@ footer {
 
     .grid-container {
         grid-template-columns: auto;
+        margin-top: 9%;
     }
 }

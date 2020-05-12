@@ -49,12 +49,11 @@ main {
 }
 
 .container {
-    margin: 2em;
     height: auto;
-    margin: auto;
+    margin: auto auto 8em auto;
     text-align: center;
+    padding: 0.5em;
 }
-
 
 /* Spécifications graphiques des menus dépendant du main*/
 .background-a {
@@ -62,12 +61,9 @@ main {
 }
 
 .background-a, .background-b, .background-c, .background-d {
-    padding: 3em;
-    margin-bottom: 10em;
-    border: solid 1px rgba(150,150,150,0.5);
+    padding: 1.5em;
+    border: solid 1px rgba(120,120,120,1);
 }
-
-
 
 /* Icone */
 .fas {
@@ -93,7 +89,6 @@ main {
     color: #460000;
 }
 
-
 /* Le nom du Menu */
 .title-card-a {
     font: 4vh 'Devonshire', cursive;
@@ -101,7 +96,7 @@ main {
     color: #460000;
 }
 .title-card-b {
-    font: 5vh 'Redressed', cursive;
+    font: 4.8vh 'Redressed', cursive;
     letter-spacing: 2px;
     background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
     -webkit-background-clip: text;
@@ -121,8 +116,7 @@ main {
 }
 
 .title-card-a, .title-card-b, .title-card-c, .title-card-d {
-    margin-top: 0.5em;
-    margin-bottom: 2em;
+    margin: 0.5em auto 1.5em auto;
     text-align: center;
 }
 
@@ -146,21 +140,8 @@ main {
 }
 
 
-/* Entrée, plats, dessert */
-.name-part-a {
-    width: 100%;
-    font-size: 2.5vh;
-}
-
-.name-part-b {
-    width: 100%;
-    font-size: 2.5vh;
-}
-.name-part-c {
-    width: 100%;
-    font-size: 2.5vh;
-}
-.name-part-d {
+/* Entrées, plats, desserts */
+.name-part-a, .name-part-b, .name-part-c, .name-part-d {
     width: 100%;
     font-size: 2.5vh;
 }
@@ -226,7 +207,7 @@ main {
 
 .deviser-d_l, .deviser-d_r {
     width: 70%;
-    height: 0.5vh;
+    height: 0.3em;
     border-radius: 50%;
 }
 .deviser-d_l {
@@ -250,14 +231,14 @@ main {
     align-items: start;
     justify-content: space-between;
     line-height: 4vh;
+    overflow-wrap: unset;
 }
 .recipe {
     font-size: 2vh;
     text-align: left;
 }
 .price {
-    font-weight: bold;
-    font-size: 2vh;
+    font: bold 2vh;
     text-align: right;
 }
 
@@ -268,7 +249,7 @@ footer {
     position: fixed;
     bottom: 0px;
     justify-content: space-between;
-    padding: 0 1.5vh 0 1.5vh;
+    padding: 0 1em 0 1em;
     line-height: 7.5vh;
 }
 
@@ -298,26 +279,56 @@ footer {
     border-bottom: solid 1px transparent;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .recipe {
-        font-size: 1.4vh;
+        font-size: 2vh;
         text-align: left;
     }
     .price {
-        font: bold 1.4vh;
+        font: bold 2vh;
         text-align: right;
     }
-  }
+    .first-section, .second-section, .third-section {
+        letter-spacing: -1px;
+    }
+    .first-section-b, .second-section-b, .third-section-b {
+        letter-spacing: 0px;
+    }
+    .background-a, .background-b, .background-c, .background-d {
+        padding: 1em;
+    }
+    .container {
+        margin-bottom: 5em;
+    }
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 580px) {
     body header {
       font-size: 2vh;
     }
-
+    main {
+        justify-content: inherit;
+    }
+    .recipe{
+        font-size: 1.7vh;
+    }
+    .price {
+        font-size: 1.5vh;
+    }
     footer {
         font-size: 1.5vh;
     }
-  }
+}
 
-
-  
+@media screen and (max-width: 1024px) {
+    .container {
+        margin-bottom: 7em;
+    }
+    .title-card-a, .title-card-c, .title-card-d {
+        margin-bottom: 1em;
+        font-size: 7vh;
+    }
+    .title-card-b  {
+        margin-bottom: 1em;
+    }
+}
