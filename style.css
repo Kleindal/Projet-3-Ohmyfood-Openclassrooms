@@ -29,7 +29,7 @@ header, footer {
 }
 
 a:hover, a:active, a:visited, a:focus, a:link {
-    color: #ffc846 !important;
+    color: #ffc846;
     color: -webkit-link #ffc846;
 }
 
