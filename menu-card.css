@@ -9,10 +9,19 @@ body {
     text-align: center;
 }
 
-a:active, a:hover a:link, a:visited {
+/* Couleur des liens présents sur les 4 menus + header */
+header a:visited,
+header a:link {
     color: #ffc846;
-    color: -webkit-link #ffc846;
 }
+
+li a:active, li a:hover, li a:link, li a:visited {
+    color: #000;
+    color: -webkit-link #000;
+}
+
+
+
 body header {
     display: flex;
     flex-wrap: nowrap;
@@ -51,11 +60,11 @@ main {
 .container {
     height: auto;
     margin: auto auto 8em auto;
-    text-align: center;
+    text-align: left;
     padding: 0.5em;
 }
 
-/* Spécifications graphiques des menus dépendant du main*/
+/* Spécifications graphiques des menus*/
 .background-a {
     background-color: #fadcdc;
 }
@@ -84,6 +93,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 1em;
     font: 3.5vh 'Devonshire', cursive;
     text-align: center;
     color: #460000;
@@ -124,7 +134,6 @@ main {
 .first-section, .second-section, .third-section {
     font-family: 'Kalam', sans-serif;
 }
-
 .first-section-b, .second-section-b, .third-section-b {
     font-family: 'Redressed', cursive;
     letter-spacing: 1px;
@@ -153,7 +162,8 @@ main {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    margin-top: 2vh;
+    margin-top: 2em;
+    margin-bottom: 1em;
     text-align: center;
 }
 
@@ -217,32 +227,100 @@ main {
     background: -webkit-linear-gradient(45deg,#c8ff78, #329632);
 }
 
-
-.recipes-list {
+/* Ancienne partie */
+/* .recipes-list {
     display: grid;
     overflow: auto;
     margin-top: 1vh;
     grid-template-columns: auto auto;
-    grid-gap: 1.5vh;
+    grid-gap: 1em;
     grid-template-areas: 
     "recipe list"
     "recipe list"
     "recipe list";
     align-items: start;
     justify-content: space-between;
-    line-height: 4vh;
+    line-height: 2em;
     overflow-wrap: unset;
 }
-.recipe {
+.recipes {
     font-size: 2vh;
     text-align: left;
+    padding: 2px;
+    cursor: pointer;
+    border-bottom: solid 2px transparent;
+
+} */
+
+
+/* Nouvelle Partie */
+.recipe {
+    display: grid;
+    overflow: auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    'name_recipe price'
+    'name_recipe price'
+    'name_recipe price';
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
 }
 .price {
     font: bold 2vh;
     text-align: right;
+    border-bottom: solid 2px transparent;
 }
 
+li {
+    position: relative;
+}
 
+.name_recipe:after {
+    content: '';
+    position: absolute;
+    border-bottom: solid 1px #000;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    transition: all 1s;
+}
+
+.name_recipe:hover:after{
+    right: 0;
+}
+
+.name_recipe-orange:after {
+    content: '';
+    position: absolute;
+    border-bottom: solid 1px #c88232;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    transition: all 1s;
+}
+.name_recipe-orange:hover:after, .name_recipe-pink:hover:after, .name_recipe-purple:hover:after{
+    right: 0%;
+}
+.name_recipe-pink:after {
+    content: '';
+    position: absolute;
+    border-bottom: solid 1px #b300b3;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    transition: all 1s;
+}.name_recipe-purple:after {
+    content: '';
+    position: absolute;
+    border-bottom: solid 1px #8c5aff;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    transition: all 1s;
+}
+
+/* Footer animation et media-queries */
 footer {
     display: flex;
     flex-wrap: nowrap;
