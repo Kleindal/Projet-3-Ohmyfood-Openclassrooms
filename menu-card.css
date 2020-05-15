@@ -8,7 +8,6 @@
 body {
     text-align: center;
 }
-
 /* Couleur des liens présents sur les 4 menus + header */
 header a:visited,
 header a:link {
@@ -20,8 +19,6 @@ li a:active, li a:hover, li a:link, li a:visited {
     color: -webkit-link #000;
 }
 
-
-
 body header {
     display: flex;
     flex-wrap: nowrap;
@@ -32,7 +29,6 @@ body header {
     font-size: 2vh;
     line-height: 4em;
 }
-
 header, footer {
     width: 100%;
     font-family: "Montserrat", sans-serif;
@@ -56,7 +52,6 @@ main {
     justify-content: center;
 
 }
-
 .container {
     height: auto;
     margin: auto auto 8em auto;
@@ -124,7 +119,6 @@ main {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .title-card-a, .title-card-b, .title-card-c, .title-card-d {
     margin: 0.5em auto 1.5em auto;
     text-align: center;
@@ -148,7 +142,6 @@ main {
     color: #8c5aff;
 }
 
-
 /* Entrées, plats, desserts */
 .name-part-a, .name-part-b, .name-part-c, .name-part-d {
     width: 100%;
@@ -166,7 +159,6 @@ main {
     margin-bottom: 1em;
     text-align: center;
 }
-
 .deviser-a {
     width: 50%;
     height: 0.5vh;
@@ -214,7 +206,6 @@ main {
 .deviser-c_cyan-l, .deviser-c_cyan-r {
     background-color: #0087fa;
 }
-
 .deviser-d_l, .deviser-d_r {
     width: 70%;
     height: 0.3em;
@@ -227,33 +218,7 @@ main {
     background: -webkit-linear-gradient(45deg,#c8ff78, #329632);
 }
 
-/* Ancienne partie */
-/* .recipes-list {
-    display: grid;
-    overflow: auto;
-    margin-top: 1vh;
-    grid-template-columns: auto auto;
-    grid-gap: 1em;
-    grid-template-areas: 
-    "recipe list"
-    "recipe list"
-    "recipe list";
-    align-items: start;
-    justify-content: space-between;
-    line-height: 2em;
-    overflow-wrap: unset;
-}
-.recipes {
-    font-size: 2vh;
-    text-align: left;
-    padding: 2px;
-
-    border-bottom: solid 2px transparent;
-
-} */
-
-
-/* Nouvelle Partie */
+/* Grid + transition underline */
 .recipe {
     display: grid;
     overflow: auto;
@@ -266,12 +231,10 @@ main {
     align-items: center;
     justify-content: space-between;
 }
-
 li {
     position: relative;
     cursor: default;
 }
-
 .name_recipe:after {
     content: '';
     position: absolute;
@@ -281,11 +244,9 @@ li {
     right: 100%;
     transition: all 1s;
 }
-
 .name_recipe:hover:after{
     right: 0;
 }
-
 .name_recipe-orange:after {
     content: '';
     position: absolute;
@@ -315,14 +276,12 @@ li {
     right: 100%;
     transition: all 1s;
 }
-
 .price {
     font: bold 2vh;
     padding-left: 10px;
     text-align: right;
     border-bottom: solid 2px transparent;
 }
-
 
 /* Footer animation et media-queries */
 footer {
@@ -334,12 +293,15 @@ footer {
     padding: 0 1em 0 1em;
     line-height: 7.5vh;
 }
-
+.btn_footer {
+    font-size: 2vh;
+    color: #ffc846;
+    border-bottom: solid 1px transparent;
+}
 .hover-shake:hover {
     animation: shake 150ms;
     animation-iteration-count: 2;
 }
-
 @keyframes shake {
     from {
       transform: rotate(0deg);
@@ -353,12 +315,6 @@ footer {
     to {
       transform: rotate(0deg);
     }
-}
-
-.btn_footer {
-    font-size: 2vh;
-    color: #ffc846;
-    border-bottom: solid 1px transparent;
 }
 
 @media screen and (max-width: 450px) {
@@ -390,7 +346,6 @@ footer {
         margin-bottom: 5em;
     }
 }
-
 @media screen and (max-width: 580px) {
     body header {
       font-size: 2vh;
@@ -400,7 +355,6 @@ footer {
         font-size: 1.5vh;
     }
 }
-
 @media screen and (max-width: 1024px) {
     .container {
         margin-bottom: 7em;
