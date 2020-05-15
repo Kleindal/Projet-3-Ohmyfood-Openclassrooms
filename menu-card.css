@@ -247,7 +247,7 @@ main {
     font-size: 2vh;
     text-align: left;
     padding: 2px;
-    cursor: pointer;
+
     border-bottom: solid 2px transparent;
 
 } */
@@ -266,14 +266,10 @@ main {
     align-items: center;
     justify-content: space-between;
 }
-.price {
-    font: bold 2vh;
-    text-align: right;
-    border-bottom: solid 2px transparent;
-}
 
 li {
     position: relative;
+    cursor: default;
 }
 
 .name_recipe:after {
@@ -319,6 +315,14 @@ li {
     right: 100%;
     transition: all 1s;
 }
+
+.price {
+    font: bold 2vh;
+    padding-left: 10px;
+    text-align: right;
+    border-bottom: solid 2px transparent;
+}
+
 
 /* Footer animation et media-queries */
 footer {

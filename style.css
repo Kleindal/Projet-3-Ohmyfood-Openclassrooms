@@ -121,10 +121,10 @@ a:hover, a:active, a:visited, a:focus, a:link {
 
 .menu-b {
     font: 5vh 'Redressed', cursive;
-    letter-spacing: 2px;
     background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-color: white;
 }
 
 .menu-c {
@@ -132,6 +132,7 @@ a:hover, a:active, a:visited, a:focus, a:link {
     background: -webkit-linear-gradient(45deg,#0032e1, #0087fa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-color: white;
 }
 
 .menu-d {
@@ -139,31 +140,58 @@ a:hover, a:active, a:visited, a:focus, a:link {
     background: -webkit-linear-gradient(45deg,#329632, #c8ff78);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-color: white;
 }
 
-.transition {
-    border-top: solid 100px transparent;
-    border-bottom: solid 100px transparent;
-}
-.transition:hover {
-    transform: scale(1.10);
-    transition: all 3s ease-in-out 2s;
-
-    -webkit-transform: scale(1.10);
-    -ms-transition: all 3s ease-in-out 2s;
-    -ms-transform: scale(1.10);   
-    -moz-transition: all 3s ease-in-out 2s;
-    -moz-transform: scale(1.10);
-    transition: all 3s ease-in-out 2s;
+.transition_ {
+    transition: transform 2s;
+    position: relative;
+/* le padding ne sert qu'à étendre la "portée" du hover, aligné par sa classe parent */
+    padding-top: 6em;
+    padding-bottom: 6em;
 }
 
-.sub-name {
+.transition_:hover {
+    position: absolute;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1); 
+    -moz-transform: scale(1.1);
+}
+
+.sub-name-a {
     font: 5.5vh 'Kalam', cursive;
+    background: #480000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .sub-name-b {
-    font: 5vh 'Arial', 'Helvetica', sans-serif;
-    color: #c88232;
+    font: 5vh 'Arial', sans-serif;
+    background: #c88232;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sub-name-c {
+    font: 5vh 'Kalam', sans-serif;
+    background: #0032e1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sub-name-d {
+    font: 5vh 'Kalam', sans-serif;
+    background: #329632;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sub-name-a:hover:before, .sub-name-b:hover:before, .sub-name-c:hover:before, .sub-name-d:hover:before {
+    transform: scale(1.1);
+    z-index: 2;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1); 
+    -moz-transform: scale(1.1);
 }
 
 .hover-shake:hover {
@@ -186,23 +214,6 @@ a:hover, a:active, a:visited, a:focus, a:link {
     }
 }
 
-@keyframes slide {
-    from {
-      transform: translate(0);
-    }
-    30% {
-      transform: translateX(4px);
-    }
-    50% {
-      transform: translate(0);
-    }
-    70% {
-      transform: translateX(-4px);
-    }
-    to {
-      transform: translate(0);
-    }
-}
 
 aside {
     display: flex;
