@@ -9,7 +9,6 @@
 body {
     margin-bottom: 100px;
 }
-
 body header {
     display: flex;
     flex-wrap: nowrap;
@@ -20,7 +19,6 @@ body header {
     font-size: 2vh;
     line-height: 4em;
 }
-
 header, footer {
     width: 100%;
     font-family: "Montserrat", sans-serif;
@@ -43,8 +41,6 @@ a:hover, a:active, a:visited, a:focus, a:link {
     padding: 2em;
     border: solid 1em transparent;
 }
-
-
 .flyleaf {
     display: flex;
     justify-content: center;
@@ -57,7 +53,6 @@ a:hover, a:active, a:visited, a:focus, a:link {
     /* border: solid 1px rgba(150,150,150,0.5); */
     cursor: pointer;
 }
-
 .flyleaf:hover {
     box-shadow: 3px 3px 10px rgba(50,50,50,0.5);
     z-index: 2;
@@ -102,7 +97,7 @@ a:hover, a:active, a:visited, a:focus, a:link {
     }
 }
 
-
+/* Icone la note enchantée */
 .fas {
     font-size: 7vh;
     color: #f05a64;
@@ -118,7 +113,6 @@ a:hover, a:active, a:visited, a:focus, a:link {
     color: #480000;
     background-color: #fadcdc;
 }
-
 .menu-b {
     font: 5vh 'Redressed', cursive;
     background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
@@ -126,7 +120,6 @@ a:hover, a:active, a:visited, a:focus, a:link {
     -webkit-text-fill-color: transparent;
     background-color: white;
 }
-
 .menu-c {
     font: 5vh 'Rouge Script', cursive;
     background: -webkit-linear-gradient(45deg,#0032e1, #0087fa);
@@ -134,7 +127,6 @@ a:hover, a:active, a:visited, a:focus, a:link {
     -webkit-text-fill-color: transparent;
     background-color: white;
 }
-
 .menu-d {
     font: 5vh 'Caveat', cursive;
     background: -webkit-linear-gradient(45deg,#329632, #c8ff78);
@@ -165,14 +157,12 @@ a:hover, a:active, a:visited, a:focus, a:link {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .sub-name-b {
     font: 5vh 'Arial', sans-serif;
     background: #c88232;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .sub-name-c {
     font: 5vh 'Kalam', sans-serif;
     background: #0032e1;
@@ -185,7 +175,6 @@ a:hover, a:active, a:visited, a:focus, a:link {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .sub-name-a:hover:before, .sub-name-b:hover:before, .sub-name-c:hover:before, .sub-name-d:hover:before {
     transform: scale(1.1);
     z-index: 2;
@@ -213,7 +202,6 @@ a:hover, a:active, a:visited, a:focus, a:link {
       transform: rotate(0deg);
     }
 }
-
 
 aside {
     display: flex;
@@ -290,8 +278,8 @@ footer {
 .grid_mentions {
     display: block;
     justify-content: center;
-    margin: 10em auto 10em auto;
-    width: 60%;
+    margin: 8em auto 6em auto;
+    width: 70%;
     font: 2vh 'Montserrat', sans-serif;
 }
 
@@ -300,7 +288,6 @@ footer {
         margin-top: 0.5em;
     }
 }
-
 @media screen and (max-width: 600px) {
     body header {
         font-size: 2vh;
@@ -313,7 +300,6 @@ footer {
         font-size: 1.5vh;
     }
 }
-
 @media screen and (max-width: 1024px) {
     main {
         flex-direction: column;
@@ -322,5 +308,9 @@ footer {
     .grid-container {
         grid-template-columns: auto;
         margin-top: 9%;
+    }
+    .grid_mentions {
+        width: 80%;
+        margin: 6em auto 6em auto;
     }
 }
