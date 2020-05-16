@@ -31,7 +31,6 @@ a:hover, a:active, a:visited, a:focus, a:link {
     color: -webkit-link #ffc846;
 }
 
-
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -140,7 +139,6 @@ a:hover, a:active, a:visited, a:focus, a:link {
     padding-top: 6em;
     padding-bottom: 6em;
 }
-
 .transition_:hover {
     position: absolute;
     transform: scale(1.1);
@@ -148,7 +146,6 @@ a:hover, a:active, a:visited, a:focus, a:link {
     -ms-transform: scale(1.1); 
     -moz-transform: scale(1.1);
 }
-
 .sub-name-a {
     font: 5.5vh 'Kalam', cursive;
     background: #480000;
@@ -185,7 +182,6 @@ a:hover, a:active, a:visited, a:focus, a:link {
     animation: shake 200ms;
     animation-iteration-count: 2;
 }
-
 @keyframes shake {
     from {
       transform: rotate(0deg);
@@ -208,7 +204,6 @@ aside {
     line-height: 1em;
     margin: 0.5em auto 7em auto;
 }
-
 .btn_coming_soon {
     display: flex;
     flex-direction: row;
@@ -226,7 +221,6 @@ aside {
     overflow: hidden;
     animation: hand_writing 2s steps(3, end) infinite, bar 600ms infinite;
 }
-
 @keyframes hand_writing {
     0% {
         width: 0%;
@@ -264,14 +258,12 @@ footer {
     color: #ffc846;
 }
 
-
 /* Mentions légales */
 .title_mentions {
     float: left;
     padding-right: 0.5em;
     font: bold 5vh 'Montserrat', sans-serif;
-    color: #ffc846;
-    
+    color: #ffc846; 
 }
 .grid_mentions {
     display: block;
@@ -293,7 +285,6 @@ footer {
     main {
         flex-direction: column;
     }
-
     .btn_footer {
         font-size: 1.5vh;
     }
@@ -302,10 +293,9 @@ footer {
     main {
         flex-direction: column;
     }
-
     .grid-container {
         grid-template-columns: auto;
-        margin-top: 9%;
+        margin-top: 10%;
     }
     .grid_mentions {
         width: 80%;
