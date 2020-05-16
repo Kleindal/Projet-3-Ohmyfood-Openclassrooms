@@ -48,6 +48,7 @@ main {
     margin: auto auto 8em auto;
     text-align: left;
     padding: 0.5em;
+    cursor: default;
 }
 
 /* Spécifications graphiques des menus*/
@@ -98,13 +99,13 @@ main {
     -webkit-text-fill-color: transparent;
 }
 .title-card-c {
-    font: 8vh 'Rouge Script', cursive;
+    font: 6vh 'Rouge Script', cursive;
     background: -webkit-linear-gradient(45deg,#0032e1, #0087fa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .title-card-d {
-    font: 8vh 'Caveat', cursive;
+    font: 6vh 'Caveat', cursive;
     background: -webkit-linear-gradient(45deg,#329632, #c8ff78);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -117,10 +118,12 @@ main {
 /* Spécifications graphiques des sections entrées, plats, desserts*/
 .first-section, .second-section, .third-section {
     font-family: 'Kalam', sans-serif;
+    margin-bottom: 2em;
 }
 .first-section-b, .second-section-b, .third-section-b {
     font-family: 'Redressed', cursive;
     letter-spacing: 1px;
+    margin-bottom: 2em;
 }
 .first-section-b {
     color:#c88232;
@@ -138,6 +141,7 @@ main {
     font-size: 2.5vh;
     position: relative;
     cursor: default;
+    padding-bottom: 0.2em;
 }
 
 /* Alignement des grands titres + diviseurs */
@@ -157,18 +161,23 @@ main {
     border-radius: 50%;
     background-color: rgb(70, 0, 0);
 }
-.deviser-b_orange-l, .deviser-b_pink-l, .deviser-b_purple-l, 
-.deviser-b_orange-r, .deviser-b_pink-r, .deviser-b_purple-r {
-    border-left: 15vh solid transparent;
-    border-bottom: 5px solid;
+.deviser-b_orange-l, .deviser-b_pink-l, .deviser-b_purple-l {
+    width: 30%;
+    border-left: 7em solid white;
+    border-bottom: 5px solid transparent;
 }
-.orange-l, .orange-r {
+.deviser-b_orange-r, .deviser-b_pink-r, .deviser-b_purple-r {
+    width: 30%;
+    border-right: 7em solid white;
+    border-bottom: 5px solid transparent;
+}
+.deviser-b_orange-l, .deviser-b_orange-r {
     background-color: #c88232;
 }
-.pink-l, .pink-r {
+.deviser-b_pink-l, .deviser-b_pink-r {
     background-color: #b300b3;
 }
-.purple-l, .purple-r {
+.deviser-b_purple-l, .deviser-b_purple-r {
     background-color: #8a2be2;
 }
 .deviser-c_blue-l, .deviser-c_teal-l, .deviser-c_cyan-l {
@@ -249,13 +258,17 @@ main {
     'name_recipe price'
     'name_recipe price'
     'name_recipe price';
-    padding: 5px;
+    padding: 0.5em;
     align-items: center;
     justify-content: space-between;
 }
+.name_recipe {
+    font-size: 1.3em;
+}
 .price {
-    font: bold 2vh;
-    padding-left: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 1em;
     text-align: right;
     border-bottom: solid 2px transparent;
 }
@@ -338,7 +351,7 @@ footer {
     }
     .title-card-a, .title-card-c, .title-card-d {
         margin-bottom: 1em;
-        font-size: 7vh;
+        font-size: 4vh;
     }
     .title-card-b  {
         margin-bottom: 1em;
