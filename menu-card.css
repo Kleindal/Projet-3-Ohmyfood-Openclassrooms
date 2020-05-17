@@ -87,31 +87,31 @@ main {
 
 /* Le grand titre de la carte */
 .title-card-a {
-    font: 4vh 'Devonshire', cursive;
+    font: 5vh 'Devonshire', cursive;
     text-align: center;
     color: #460000;
 }
 .title-card-b {
-    font: 4.8vh 'Redressed', cursive;
+    font: 4.5vh 'Redressed', cursive;
     letter-spacing: 2px;
     background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .title-card-c {
-    font: 6vh 'Rouge Script', cursive;
+    font: 6.5vh 'Rouge Script', cursive;
     background: -webkit-linear-gradient(45deg,#0032e1, #0087fa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .title-card-d {
-    font: 6vh 'Caveat', cursive;
+    font: 6.5vh 'Caveat', cursive;
     background: -webkit-linear-gradient(45deg,#329632, #c8ff78);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .title-card-a, .title-card-b, .title-card-c, .title-card-d {
-    margin: 0.5em auto 1.5em auto;
+    margin: 1em auto 1.5em auto;
     text-align: center;
 }
 
@@ -143,6 +143,10 @@ main {
     cursor: default;
     padding-bottom: 0.2em;
 }
+.name-part-a {
+    color: #460000;
+    font-weight: bold;
+}
 
 /* Alignement des grands titres + diviseurs */
 .menu-name {
@@ -151,14 +155,15 @@ main {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    margin-top: 2em;
-    margin-bottom: 1em;
+    margin: 3em 0 1em 0;
     text-align: center;
+    
 }
+
 .deviser-a {
-    width: 50%;
-    height: 0.2em;
-    border-radius: 50%;
+    width: 80%;
+    height: 0.3em;
+    border-radius: 20%;
     background-color: rgb(70, 0, 0);
 }
 .deviser-b_orange-l, .deviser-b_pink-l, .deviser-b_purple-l {
@@ -181,14 +186,14 @@ main {
     background-color: #8a2be2;
 }
 .deviser-c_blue-l, .deviser-c_teal-l, .deviser-c_cyan-l {
-    width : 30%;
+    width: 35%;
     height: 0;
     border-top: 10px solid white;
     border-left: 15vh solid transparent;
     border-bottom-left-radius: 50px;
 }
 .deviser-c_blue-r, .deviser-c_teal-r, .deviser-c_cyan-r {
-    width: 30%;
+    width: 35%;
     height: 0;
     border-top: 10px solid white;
     border-right: 15vh solid transparent;
@@ -237,8 +242,14 @@ main {
 .underline-b-purple:after {
     border-bottom: solid 2px #8c5aff;
 }
-.underline-c:after {
+.underline-c-blue:after {
     border-bottom: solid 2px #0057fa;
+}
+.underline-c-teal:after {
+    border-bottom: solid 2px #0057fa;
+}
+.underline-c-cyan:after {
+    border-bottom: solid 2px #0087fa;
 }
 .underline-d:after  {
     border-bottom: solid 2px #329632;
@@ -349,9 +360,13 @@ footer {
     .container {
         margin-bottom: 7em;
     }
-    .title-card-a, .title-card-c, .title-card-d {
+    .title-card-a, .title-card-b {
         margin-bottom: 1em;
         font-size: 4vh;
+    }
+    .title-card-c, .title-card-d {
+        margin-bottom: 1em;
+        font-size: 6vh;
     }
     .title-card-b  {
         margin-bottom: 1em;
