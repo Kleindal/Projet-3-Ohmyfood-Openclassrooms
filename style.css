@@ -5,27 +5,7 @@
     text-decoration: none;
 }
 
-/* Suppression de la supperposition du footer */
-body {
-    margin-bottom: 100px;
-}
-body header {
-    display: flex;
-    flex-wrap: nowrap;
-    position: fixed;
-    justify-content: center;
-    top: 0;
-    z-index: 1;
-    font-size: 2vh;
-    line-height: 4em;
-}
-header, footer {
-    width: 100%;
-    font-family: "Montserrat", sans-serif;
-    color: #ffc846;
-    background-color: #5aa58c;
-}
-
+/* Remplacement couleurs par défaut des liens */
 a:hover, a:active, a:visited, a:focus, a:link {
     color: #ffc846;
     color: -webkit-link #ffc846;
@@ -49,9 +29,10 @@ a:hover, a:active, a:visited, a:focus, a:link {
     align-items: center;
     text-align: center;
     cursor: pointer;
+    border: solid 1px rgba(100,100,100,0.5);
 }
 .flyleaf:hover {
-    box-shadow: 3px 3px 10px rgba(50,50,50,0.5);
+    box-shadow: 4px 4px 10px rgba(50,50,50,0.5);
     z-index: 2;
     -webkit-animation: fadein 1s ease-in;
     -moz-animation: fadein 1s ease-in;
@@ -59,6 +40,7 @@ a:hover, a:active, a:visited, a:focus, a:link {
     -ms-animation: fadein 1s ease-in;
     animation: fadein 1s ease-in;
     -webkit-transition: all 1s ease-in;
+
 }
 
 @keyframes fadein {
@@ -99,10 +81,10 @@ a:hover, a:active, a:visited, a:focus, a:link {
     font-size: 7vh;
     color: #f05a64;
     display: block;
-    background: -webkit-linear-gradient(#f05a64, #fa8c6e);
-    background-clip: text;
+    background: -webkit-gradient(linear, left top, left bottom, #f05a64, #fa8c6e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: initial;
 }
 
 .menu-a {
@@ -228,7 +210,7 @@ aside {
     50% {
         width: 10%;
     }
-    100 {
+    100% {
         width: 30%;
     }
 }

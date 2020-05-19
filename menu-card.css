@@ -5,27 +5,40 @@
     text-decoration: none;
 }
 
+body {
+    margin-bottom: 100px;
+}
+
 /* Couleur des liens présents sur les 4 menus + header */
 header a:visited,
 header a:link {
     color: #ffc846;
 }
+/* Pour tous les h1 */
+h1 {
+    font-weight: 400;
+}
 
-body header {
+body header, .logo {
     display: flex;
     flex-wrap: nowrap;
     position: fixed;
     justify-content: center;
     top: 0;
     z-index: 1;
-    font-size: 2vh;
-    line-height: 4em;
+    line-height: 2em;
 }
-header, footer {
+
+header, .logo, footer {
     width: 100%;
     font-family: "Montserrat", sans-serif;
     color: #ffc846;
     background-color: #5aa58c;
+}
+
+.logo {
+    font-size: 4vh;
+    font-weight: bold;
 }
 
 #title-top {
@@ -45,7 +58,7 @@ main {
 }
 .container {
     height: auto;
-    margin: auto auto 8em auto;
+    margin: auto auto 7em auto;
     text-align: left;
     padding: 0.5em;
     cursor: default;
@@ -87,25 +100,25 @@ main {
 
 /* Le grand titre de la carte */
 .title-card-a {
-    font: 5vh 'Devonshire', cursive;
+    font: 3vh 'Devonshire', cursive;
     text-align: center;
     color: #460000;
 }
 .title-card-b {
-    font: 4.5vh 'Redressed', cursive;
+    font: normal 3vh 'Redressed', cursive;
     letter-spacing: 2px;
     background: -webkit-linear-gradient(45deg,#c88232, #8c5aff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .title-card-c {
-    font: 6.5vh 'Rouge Script', cursive;
+    font: 4vh 'Rouge Script', cursive;
     background: -webkit-linear-gradient(45deg,#0032e1, #0087fa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .title-card-d {
-    font: 6.5vh 'Caveat', cursive;
+    font: 4vh 'Caveat', cursive;
     background: -webkit-linear-gradient(45deg,#329632, #c8ff78);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -137,11 +150,11 @@ main {
 
 /* Grand titre des entrées, plats, desserts */
 .name-part-a, .name-part-b, .name-part-c, .name-part-d {
-    width: 100%;
-    font-size: 2.5vh;
+    white-space: nowrap;
+    font-size: 2.3vh;
     position: relative;
     cursor: default;
-    padding-bottom: 0.2em;
+    margin: auto 1em 0.2em 1em;
 }
 .name-part-a {
     color: #460000;
@@ -157,11 +170,10 @@ main {
     justify-content: space-between;
     margin: 3em 0 1em 0;
     text-align: center;
-    
 }
 
 .deviser-a {
-    width: 80%;
+    width: 30%;
     height: 0.3em;
     border-radius: 20%;
     background-color: rgb(70, 0, 0);
@@ -186,17 +198,17 @@ main {
     background-color: #8a2be2;
 }
 .deviser-c_blue-l, .deviser-c_teal-l, .deviser-c_cyan-l {
-    width: 35%;
+    width: 40%;
     height: 0;
     border-top: 10px solid white;
-    border-left: 15vh solid transparent;
+    border-left: 10em solid transparent;
     border-bottom-left-radius: 50px;
 }
 .deviser-c_blue-r, .deviser-c_teal-r, .deviser-c_cyan-r {
-    width: 35%;
+    width: 40%;
     height: 0;
     border-top: 10px solid white;
-    border-right: 15vh solid transparent;
+    border-right: 10em solid transparent;
     border-bottom-right-radius: 50px;
 }
 .deviser-c_blue-l, .deviser-c_blue-r {
@@ -209,7 +221,7 @@ main {
     background-color: #0087fa;
 }
 .deviser-d_l, .deviser-d_r {
-    width: 70%;
+    width: 30%;
     height: 0.3em;
     border-radius: 50%;
 }
@@ -222,7 +234,8 @@ main {
 
 /* transition soulignement entrée, plats, desserts */
 .underline-a:after, .underline-b-orange:after, .underline-b-pink:after,
-.underline-b-purple:after, .underline-c:after, .underline-d:after {
+.underline-b-purple:after, .underline-c-blue:after, .underline-c-teal:after,
+.underline-c-cyan:after, .underline-d:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -254,9 +267,9 @@ main {
 .underline-d:after  {
     border-bottom: solid 2px #329632;
 }
-.underline-a:hover:after, 
-.underline-b-orange:hover:after, .underline-b-pink:hover:after, .underline-b-purple:hover:after,
-.underline-c:hover:after, .underline-d:hover:after {
+.underline-a:hover:after, .underline-b-orange:hover:after, .underline-b-pink:hover:after,
+.underline-b-purple:hover:after, .underline-c-blue:hover:after, .underline-c-teal:hover:after,
+.underline-c-cyan:hover:after, .underline-d:hover:after {
     right: 0;
 }
 
@@ -362,11 +375,11 @@ footer {
     }
     .title-card-a, .title-card-b {
         margin-bottom: 1em;
-        font-size: 4vh;
+        font-size: 2.5vh;
     }
     .title-card-c, .title-card-d {
         margin-bottom: 1em;
-        font-size: 6vh;
+        font-size: 3vh;
     }
     .title-card-b  {
         margin-bottom: 1em;
